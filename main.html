@@ -11,39 +11,72 @@
 <body>
     <div class="wrapper">
         <div class="sidebar">
+            <div class="section">
+                <div class="top-navbar">
+                    <div class="enter">
+                        <a href="#"><i class="fas fa-bars"></i></a>
+
+                    </div>
+                </div>
+
+            </div>
             <div class="profile">
                 <img src="user.svg">
                 <h3>User Name</h3>
                 <p>Student</p>
             </div>
             <ul>
-                <li><a href="#"><span class="item"> 
+                <li><a href="#" class="active">
+                    <span class="icon"><i class="fa-solid fa-book-open-reader"></i></span>
+                    <span class="item"> 
                 Book Community
                 </span></a></li>
-                <li><a href="#"><span class="item"> 
-                Exam-Preparation Scheduler
+                <li><a href="#">
+                    <span class="icon"><i class="fa-solid fa-clipboard-list"></i></span>
+                    <span class="item"> 
+                Exam-Prep Scheduler
                 </span></a></li>
-                <li><a href="#"><span class="item"> 
+                <li><a href="#">
+                    <span class="icon"><i class="fa-solid fa-file-video"></i></span>
+                    <span class="item"> 
                 Video Summarizer
                 </span></a></li>
-                <li><a href="#"><span class="item"> 
+                <li><a href="#">
+                    <span class="icon"><i class="fa-solid fa-language"></i></span>
+                    <span class="item"> 
                 Apna Basha
                 </span></a></li>
-                <li><a href="#"><span class="item"> 
+                <li><a href="#">
+                    <span class="icon"><i class="fa-solid fa-user-pen"></i></span>
+                    <span class="item"> 
                 Offline Friend
                 </span></a></li>
-                <li><a href="#"><span class="item"> 
+                <li><a href="#">
+                    <span class="icon"><i class="fa-solid fa-signal"></i></span>
+                    <span class="item"> 
                 Student Progress
                 </span></a></li>
-                <li><a href="#"><span class="item"> 
+                <li><a href="#">
+                    <span class="icon"><i class="fa-solid fa-ear-deaf"></i></span>
+                    <span class="item"> 
                 Sign Language Friend
                 </span></a></li>
-                <li><a href="#"><span class="item"> 
+                <li><a href="#">
+                    <span class="icon"><i class="fa-solid fa-gamepad"></i></span>
+                    <span class="item"> 
                 Let's Play
                 </span></a></li>
                 
             </ul>
+           
         </div>
     </div>
+    <script>
+        var enter=document.querySelector(".enter");
+        enter.addEventListener("click",function(){
+            document.querySelector("body").classList.toggle("active");
+        })
+    </script>
+
 </body>
 </html>
