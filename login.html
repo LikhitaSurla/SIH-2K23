@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login page</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
@@ -17,15 +16,16 @@
 
             </div>
             <div class="social-icons">
-                <img src="facebook.svg"> 
-                
-                 <img src="x.svg">
-                <img src="google.svg"> 
+                <img src="facebook.svg">
+                <img src="x.svg">
+                <img src="google.svg">
             </div>
             <form id="login" class="input-group">
                <input type="text" class="input-field" placeholder="User Id" required>
                <input type="text" class="input-field" placeholder="Enter Password" required>
-               <input type="checkbox" class="check-box"><span>Remember Password</span>
+               <div>
+               <input type="checkbox" class="check-box" id="checkbox2"><label for="checkbox2">Remember Password</label>
+            </div>
                <button type="submit" class="submit-btn">Login</button>
             </form>
 
@@ -36,7 +36,7 @@
                 <input type="text" class="input-field" placeholder="Enter Password" required>
 
                 <input type="text" class="input-field" placeholder="Confirm Password" required>
-                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <input type="checkbox" class="check-box" id="checkbox"><label for="checkbox">I agree to the terms & conditions</label>
                 <button type="submit" class="submit-btn">Register</button>
              </form>
         </div>
@@ -50,15 +50,15 @@
          x.style.left ="-400px";
          y.style.left ="30px";
          z.style.left ="110px";
-         x.style.marginRight="450px";
-         y.style.marginLeft="50px";
+         x.style.marginRight = "450px";
+         y.style.marginLeft = "50px";
        }
        function login(){
          x.style.left="30px";
          y.style.left="400px";
          z.style.left="0px";
-         x.style.marginRight="0px";
-         y.style.marginLeft="450px";
+         x.style.marginRight = "0px";
+         y.style.marginLeft = "450px";
        }
      </script>
    
