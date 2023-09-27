@@ -13,7 +13,7 @@
 }
 .form-box{
     width:380px;
-    height:400px;
+    height:450px;
     position:relative;
     margin:10% auto;
     background: #fff;
@@ -62,7 +62,7 @@
     padding:2px;
  
 }
-input-group{
+.input-group{
     top:180px;
     position:absolute;
     width:280px;
@@ -103,6 +103,9 @@ span{
 
 #login{
 margin-left:50px;
+display:flex;
+flex-direction: column;
+justify-content: center;
 }
 #register{
     margin-left:450px;
