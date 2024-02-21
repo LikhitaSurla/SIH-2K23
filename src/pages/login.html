@@ -1,49 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login page</title>
-    <link rel="stylesheet" href="../styles/login.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/login.css" />
+  </head>
+  <body>
     <div class="hero">
-        <div class="form-box">
-            <div class="button-box">
-                <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="login()">Login</button>
-                <button type="button" class="toggle-btn" onclick="register()">Register</button>
-
-            </div>
-            <div class="social-icons">
-                <img src="../../public/img/facebook.svg">
-                <img src="../../public/img/x.svg">
-                <img src="../../public/img/google.svg">
-            </div>
-            <form id="login" class="input-group">
-               <input type="text" class="input-field" placeholder="User Id" required>
-        
-               <input type="password" class="input-field" id="togglePassword" placeholder="Enter Password" required>
-               <div>
-               <input type="checkbox" class="check-box" id="checkbox2"><label for="checkbox2">Remember Password</label>
-            </div>
-               <button type="submit" class="submit-btn">Login</button>
-            </form>
-
-
-            <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="email" class="input-field" placeholder="Email Id" required>
-                <input type="password" class="input-field" placeholder="Enter Password" required>
-
-                <input type="password" class="input-field" placeholder="Confirm Password" required>
-                <input type="checkbox" class="check-box" id="checkbox"><label for="checkbox">I agree to the terms & conditions</label>
-                <button type="submit" class="submit-btn">Register</button>
-             </form>
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Login
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
         </div>
+        <div class="social-icons">
+          <img src="../../public/img/facebook.svg" />
+          <img src="../../public/img/x.svg" />
+          <img src="../../public/img/google.svg" />
+        </div>
+        <form id="login" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+
+          <input
+            type="password"
+            class="input-field"
+            id="togglePassword"
+            placeholder="Enter Password"
+            required
+          />
+          <div>
+            <input type="checkbox" class="check-box" id="checkbox2" /><label
+              for="checkbox2"
+              >Remember Password</label
+            >
+          </div>
+          <button type="submit" class="submit-btn">Login</button>
+        </form>
+
+        <form id="register" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email Id"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Confirm Password"
+            required
+          />
+          <input type="checkbox" class="check-box" id="checkbox" /><label
+            for="checkbox"
+            >I agree to the terms & conditions</label
+          >
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
     </div>
-    <script src="../js/login.js">
-     </script>
-   
-</body>
+    <script src="../js/login.js"></script>
+  </body>
 </html>
